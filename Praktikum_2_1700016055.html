@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>interaktivitas</title>
+</head>
+    <style>
+        canvas
+        {
+            background-color: lightblue;
+        }
+    </style>
+<body>
+    
+    <canvas height="450" width="900" id="canvas"></canvas>
+</body>
+<script>
+    var c = document.getElementById('canvas');
+    var ctx = c.getContext('2d');
+
+    document.body.addEventListener('mousedown',drawline);
+
+    function drawline(e)
+    {
+        var x = e.offsetX;
+        var y = e.offsetY;
+        ctx.lineTo(x,y);
+        ctx.lineWidth = 3;
+        ctx.strokeStyle = "green";
+        ctx.stroke();
+    }
+
+    document.body.addEventListener("dblclick",putus);
+    function putus()
+    {
+        ctx.beginPath();
+        var x = e.offsetX;
+        var y = e.offsetY;
+        ctx.lineTo(x,y);
+        ctx.lineWidth = 3;
+        ctx.strokeStyle = "green";
+        ctx.stroke();
+    }
+    document.body.addEventListener("keydown",warna)
+    function warna(e)
+    {
+        if(e.keyCode == 13)
+        {
+            ctx.fillStyle = "red";
+            ctx.fill();
+        }
+    }
+</script>
+</html>
