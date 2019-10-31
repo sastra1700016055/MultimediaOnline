@@ -9,7 +9,7 @@
          }         
          canvas{
           position: absolute;
-          
+          background-image: url("oop/suger.jpg");
           
          }
       </style>
@@ -21,24 +21,24 @@ function startGame() {
    for(var i=1; i<=25; i++)
    {
       if (i<=5) {
-        sprites[i]=new sprite('gambar/image_'+i+'.png',(i-0)*95,465); 
-        targets[i]=new sprite('gambar/target_'+i+'.png',625,i*93);      
+        sprites[i]=new sprite('oop/image_'+i+'.png',(i-0)*95,465); 
+        targets[i]=new sprite('oop/target_'+i+'.png',625,i*93);      
         dragable(sprites[i],targets[i]);  
       } else if(i<=10) {
-        sprites[i]=new sprite('gambar/image_'+i+'.png',(i-5)*95,93); 
-        targets[i]=new sprite('gambar/target_'+i+'.png',718,(i-5)*93);      
+        sprites[i]=new sprite('oop/image_'+i+'.png',(i-5)*95,93); 
+        targets[i]=new sprite('oop/target_'+i+'.png',718,(i-5)*93);      
         dragable(sprites[i],targets[i]);  
       } else if(i<=15) {
-        sprites[i]=new sprite('gambar/image_'+i+'.png',(i-10)*95,186); 
-        targets[i]=new sprite('gambar/target_'+i+'.png',811,(i-10)*93);      
+        sprites[i]=new sprite('oop/image_'+i+'.png',(i-10)*95,186); 
+        targets[i]=new sprite('oop/target_'+i+'.png',811,(i-10)*93);      
         dragable(sprites[i],targets[i]);  
       } else if(i<=20) {
-        sprites[i]=new sprite('gambar/image_'+i+'.png',(i-15)*95,279); 
-        targets[i]=new sprite('gambar/target_'+i+'.png',904,(i-15)*93);      
+        sprites[i]=new sprite('oop/image_'+i+'.png',(i-15)*95,279); 
+        targets[i]=new sprite('oop/target_'+i+'.png',904,(i-15)*93);      
         dragable(sprites[i],targets[i]);  
       } else if(i<=25) {
-        sprites[i]=new sprite('gambar/image_'+i+'.png',(i-20)*95,372); 
-        targets[i]=new sprite('gambar/target_'+i+'.png',997,(i-20)*93);      
+        sprites[i]=new sprite('oop/image_'+i+'.png',(i-20)*95,372); 
+        targets[i]=new sprite('oop/target_'+i+'.png',997,(i-20)*93);      
         dragable(sprites[i],targets[i]);  
       }
       
